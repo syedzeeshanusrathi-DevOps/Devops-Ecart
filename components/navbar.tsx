@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between border-b p-4">
@@ -6,9 +8,9 @@ export default function Navbar() {
       </h1>
 
       <div className="flex gap-6">
-        <a href="/">Home</a>
-        <a href="/cart">Cart (0)</a>
-        <a href="/login">Login</a>
+        <Link href="/">Home</Link>
+        <Link href="/cart">Cart (0)</Link>
+        <Link href="/login">Login</Link>
       </div>
     </nav>
   );
